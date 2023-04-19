@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="a2048.MenuController">
+    <children>
+        <Label layoutX="180.0" layoutY="178.0" stylesheets="@label.css" text="2048" AnchorPane.topAnchor="180.0">
+            <font>
+                <Font size="50.0" />
+            </font>
+        </Label>
+        <Button fx:id="start" layoutX="180.0" layoutY="307.0" mnemonicParsing="false" onAction="#startpress" prefHeight="40.0" prefWidth="140.0" stylesheets="@button_outside.css" text="Start" AnchorPane.bottomAnchor="150.0">
+            <font>
+                <Font size="20.0" />
+            </font></Button>
+        <Button fx:id="leave" layoutX="180.0" layoutY="381.0" mnemonicParsing="false" onAction="#leavepress" prefHeight="40.0" prefWidth="140.0" stylesheets="@button_outside.css" text="Leave" AnchorPane.bottomAnchor="75.0">
+            <font>
+                <Font size="20.0" />
+            </font></Button>
+    </children>
+</AnchorPane>

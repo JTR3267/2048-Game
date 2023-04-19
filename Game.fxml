@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handle" prefHeight="625.0" prefWidth="500.0" style="-fx-background-color: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="a2048.Gamecontroller">
+    <children>
+        <GridPane fx:id="maze" layoutY="125.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ImageView fx:id="image1" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="image2" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                <ImageView fx:id="image3" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+                <ImageView fx:id="image4" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+                <ImageView fx:id="image5" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+                <ImageView fx:id="image6" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <ImageView fx:id="image7" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <ImageView fx:id="image8" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <ImageView fx:id="image9" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+                <ImageView fx:id="image10" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <ImageView fx:id="image11" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <ImageView fx:id="image12" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <ImageView fx:id="image13" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" />
+                <ImageView fx:id="image14" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <ImageView fx:id="image15" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <ImageView fx:id="image16" fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.rowIndex="1" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.rowIndex="2" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.rowIndex="3" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.columnIndex="1" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.columnIndex="2" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.columnIndex="3" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <Pane prefHeight="125.0" prefWidth="125.0" style="-fx-border-color: rgba(189, 162, 156, 1); -fx-border-width: 4;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+        <Pane fx:id="pane1" layoutY="125.0" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: rgba(255, 255, 255, .7);" visible="false" />
+        <Group fx:id="win" layoutX="166.0" layoutY="350.0" visible="false">
+            <children>
+                <Button layoutX="8.0" layoutY="15.0" mnemonicParsing="false" onAction="#onRestartPressed" prefHeight="45.0" prefWidth="153.0" stylesheets="@button_inside.css" text="New Game">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button layoutX="8.0" layoutY="75.0" mnemonicParsing="false" onAction="#onBackPressed" prefHeight="45.0" prefWidth="153.0" stylesheets="@button_inside.css" text="Menu">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Label layoutX="15.0" layoutY="-40.0" prefHeight="40.0" prefWidth="140.0" stylesheets="@containlabel.css" text="You Win!">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+            </children>
+        </Group>
+        <Group fx:id="lose" layoutX="22.0" layoutY="289.0" visible="false">
+            <children>
+                <Label fx:id="lostext" contentDisplay="CENTER" layoutX="5.0" layoutY="5.0" prefHeight="40.0" prefWidth="446.0" stylesheets="@containlabel.css" text="You Lose ! Highest Score : " textAlignment="CENTER">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <Button layoutX="152.0" layoutY="60.0" mnemonicParsing="false" onAction="#onRestartPressed" prefHeight="45.0" prefWidth="153.0" stylesheets="@button_inside.css" text="New Game">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button layoutX="152.0" layoutY="120.0" mnemonicParsing="false" onAction="#onBackPressed" prefHeight="45.0" prefWidth="153.0" stylesheets="@button_inside.css" text="Menu">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </Group>
+        <Group fx:id="paulse" layoutX="156.0" layoutY="361.0" visible="false">
+            <children>
+                <Button fx:id="backbutton" layoutX="25.0" layoutY="-70.0" mnemonicParsing="false" onAction="#onBackPressed" prefHeight="40.0" prefWidth="140.0" stylesheets="@button_inside.css" text="Menu">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="resumebutton" layoutX="25.0" layoutY="-10.0" mnemonicParsing="false" onAction="#onResumePressed" prefHeight="40.0" prefWidth="140.0" stylesheets="@button_inside.css" text="Resume">
+                    <font>
+                        <Font size="20.0" />
+                    </font></Button>
+                <Button fx:id="restartbutton" layoutX="25.0" layoutY="50.0" mnemonicParsing="false" onAction="#onRestartPressed" prefHeight="40.0" prefWidth="140.0" stylesheets="@button_inside.css" text="Restart">
+                    <font>
+                        <Font size="20.0" />
+                    </font></Button>
+            </children>
+        </Group>
+        <Label fx:id="highestscore" layoutX="131.0" layoutY="46.0" stylesheets="@containlabel.css" text="Highest Score : 0" textAlignment="CENTER">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+    </children>
+</Pane>

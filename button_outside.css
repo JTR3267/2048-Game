@@ -1,0 +1,13 @@
+.button {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-font-family: 'Trebuchet MS', sans-serif;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to top, #9face6 0%, #74ebd5 100%);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+/*#e3a6a1 0%, #bc5f6a 39%, #19b3b1 78%, #034b61 100%;

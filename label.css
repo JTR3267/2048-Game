@@ -1,0 +1,7 @@
+.label {
+    -fx-font-size: 60px;
+    -fx-text-fill: white;
+    -fx-font-family: 'Trebuchet MS', sans-serif;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
